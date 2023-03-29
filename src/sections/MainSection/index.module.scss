@@ -10,9 +10,10 @@
     }
     &__content {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         height: 100%;
         flex-direction: row;
+        padding-top: 30vh;
     }
     &__info {
         width: 60%;
@@ -31,7 +32,7 @@
             line-height: 18px;
             word-wrap: break-word;
             color: #ffffff;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             margin-left: 10px;
         }
     }

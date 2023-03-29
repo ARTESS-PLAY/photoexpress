@@ -13,6 +13,10 @@
     line-height: 35px;
     text-align: center;
     text-transform: capitalize;
-
+    cursor: pointer;
+    transition: 0.3s;
     color: #47545b;
+    &:hover {
+        box-shadow: 2px 4px 60px rgba($color: $secColor, $alpha: 0.7);
+    }
 }
