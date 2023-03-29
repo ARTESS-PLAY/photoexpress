@@ -1,0 +1,33 @@
+.nav {
+}
+.nav_ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 30px;
+    > li {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #ffffff;
+        border-left: solid 1px white;
+        flex-grow: 1;
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:nth-last-child(1) {
+            border-right: solid 1px white;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
