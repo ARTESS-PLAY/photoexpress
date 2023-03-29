@@ -5,4 +5,34 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    > div {
+        height: 100%;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-direction: row;
+    }
+    &__info {
+        width: 60%;
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 115%;
+            color: white;
+            margin-bottom: 10px;
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            word-wrap: break-word;
+            color: #ffffff;
+            margin-bottom: 30px;
+            margin-left: 10px;
+        }
+    }
 }
