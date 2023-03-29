@@ -1,0 +1,27 @@
+.advItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__round {
+        width: 160px;
+        height: 160px;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #ededed;
+        border: 2px solid #0094ff;
+        box-shadow: 1px 7px 70px 17px #628a9f;
+        img {
+            max-width: 50%;
+            max-height: 50%;
+            object-fit: contain;
+        }
+    }
+    p {
+        font-size: 35px;
+        line-height: 42px;
+        color: #ffffff;
+    }
+}
