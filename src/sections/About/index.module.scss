@@ -1,0 +1,35 @@
+.about {
+    background: linear-gradient(90deg, #9d9d9d 30%, #7e7e7e 35%);
+    > div {
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 45%;
+            object-fit: contain;
+            height: 100%;
+            align-self: stretch;
+        }
+    }
+    &__info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .title {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            align-items: center;
+            h2 {
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 68px;
+                text-align: center;
+            }
+        }
+        > p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: white;
+        }
+    }
+}

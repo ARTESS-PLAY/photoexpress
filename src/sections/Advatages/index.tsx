@@ -25,7 +25,7 @@ const Advatages: React.FC = () => {
                 </div>
             </Container>
             <div className={cl.line}></div>
-            <div className={cl.cuteLine}></div>
+            <span className={cl.cuteLine}></span>
             <div className={cl.cuteLine}></div>
             <div className={cl.cuteLine}></div>
             <div className={cl.cuteLine}></div>

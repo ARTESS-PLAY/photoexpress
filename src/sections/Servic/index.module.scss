@@ -1,0 +1,37 @@
+@import '../../assets/styles/colors.scss';
+
+.services {
+    position: relative;
+    background-color: $mainColorBG;
+    padding: 60px 0;
+    overflow: hidden;
+    h2 {
+        margin-bottom: 70px;
+        position: relative;
+        z-index: 1000;
+    }
+    &__carts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+.cute__line {
+    filter: blur(1px);
+    width: 200vw;
+    height: 70px;
+    background-color: $lineColor2;
+    margin-bottom: 50px;
+}
+.cute__lines {
+    position: absolute;
+    left: 10%;
+    bottom: -50%;
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+}

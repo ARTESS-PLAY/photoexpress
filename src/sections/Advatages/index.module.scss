@@ -69,6 +69,7 @@ h2 {
 }
 
 .cuteLine {
+    filter: blur(1px);
     position: absolute;
     right: -120%;
     bottom: 0%;
