@@ -31,7 +31,9 @@ const NavigationItem: React.FC<NavigationItemI> = ({ item }) => {
                     ref={subMenuRef}
                     onClick={() => setsubActive((prev) => !prev)}>
                     {item.text}
-                    <span>&gt;</span>
+                    <span className={`${cl.arrow} ${subActive ? cl['arrow--active'] : ''}`}>
+                        &nbsp;&gt;
+                    </span>
                     <ul className={cl.sub_menu} style={{ display: `${subActive ? '' : 'none'}` }}>
                         {item.children.map((el) => (
                             <li>

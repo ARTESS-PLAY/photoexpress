@@ -23,4 +23,16 @@
 }
 .has_sub {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+}
+
+.arrow {
+    transition: 0.3s;
+    width: 25px;
+}
+
+.arrow--active {
+    transform: rotate(90deg) translateX(-3px);
 }
