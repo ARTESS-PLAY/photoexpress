@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useCallback, useEffect, useRef } from 'react';
+import { useOutSideClick } from '../../../hooks/useOutSideClick';
 import cl from './index.module.scss';
 
 type NavigationItemT = {
@@ -13,10 +15,21 @@ interface NavigationItemI {
 
 const NavigationItem: React.FC<NavigationItemI> = ({ item }) => {
     const [subActive, setsubActive] = React.useState<boolean>(false);
+    const subMenuRef = useRef<HTMLDivElement>(null);
+
+    const outsideClick = useCallback(() => {
+        setsubActive(false);
+    }, []);
+
+    useOutSideClick(subMenuRef, outsideClick);
+
     return (
         <>
             {item.children ? (
-                <div className={cl.has_sub} onClick={() => setsubActive((prev) => !prev)}>
+                <div
+                    className={cl.has_sub}
+                    ref={subMenuRef}
+                    onClick={() => setsubActive((prev) => !prev)}>
                     {item.text}
                     <span>&gt;</span>
                     <ul className={cl.sub_menu} style={{ display: `${subActive ? '' : 'none'}` }}>
